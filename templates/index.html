@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container p-5">
+        <h2 class="text-center p-5 h2">This is your joke of the day</h2>
+        <p class="text-center p-5"> {{ joke }}</p>
+        <form action="/" method="get" class="text-end">
+            <button class="btn btn-success" type="submit">Get Another Joke</button>
+        </form>
+    </div>
+{% endblock %}
